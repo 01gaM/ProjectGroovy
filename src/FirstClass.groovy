@@ -5,8 +5,8 @@ class FirstClass {
     private double d1
     def int var //unnecessary def modifiers when used with explicit type declaration
     def var2
-/*
 
+/*
     public FirstClass(int il, String str1, double  d1){
         this.i1 = il;
         this.str1 = str1;
@@ -14,6 +14,18 @@ class FirstClass {
     }
 
 */
+    //метод с возвращаемым значением типа Integer, но без оператора return
+    Integer testFunction(){
+        println("\nБыла запушена функция testFunction()")
+    }
+
+    Integer intFunction1(Integer num){
+        return num
+    }
+
+    int intFunction2(Integer num){
+        return num
+    }
 
     int getI1() {
         return i1
@@ -37,10 +49,6 @@ class FirstClass {
 
     void setD1(double d1) {
         this.d1 = d1
-    }
-
-    Integer testFunction(){
-        println("\nБыла запушена функция testFunction()")
     }
 
 }
